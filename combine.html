@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Perfect Review Layout</title>
+  <link rel="shortcut icon" href="./google_PNG19635.webp" type="image/x-icon" />
+  <link rel="stylesheet" href="./combine.css" />
+</head>
+
+<body>
+  <h1 class="heading">Easily Display Google Review On Your Site</h1>
+
+  <div class="review-form">
+    <label for="text">Name : - </label>
+    <input type="text" id="name" placeholder="Enter Your Name" />
+    <label for="rating">Rating : - </label>
+    <input type="number" id="rating" placeholder="Rating (1 to 5)" min="1" max="5" />
+    <label for="description">Review : - </label>
+    <textarea id="desc" placeholder="Write Your Review..."></textarea>
+    <button onclick="submitReview()"><b>Submit Review</b></button>
+  </div>
+
+  <div class="summary-box" onclick="toggleLeft()">
+    <img src="./google_PNG19635.webp" width="40" />
+    <span id="avgRating">5.0</span>
+    <span class="stars">★★★★★</span>
+    <span id="reviewCount">0</span>REVIEWS
+    <span id="arrow">▼</span>
+  </div>
+  <div class="review-box" id="reviewBox"></div>
+
+  <div class="right-box-wrapper" id="rightBoxWrapper">
+    <div class="summary-box2" onclick="toggleRight()">
+      <img src="./google_PNG19635.webp" width="40" />
+      <span id="avgRating2">5.0</span>
+      <span class="stars">★★★★★</span>
+      <span id="reviewCount2">0</span>REVIEWS
+      <span id="arrow2">▼</span>
+    </div>
+    <div class="review-box2" id="reviewBox2"></div>
+  </div>
+
+  <script src="./combine.js"></script>
+</body>
+
+</html>
